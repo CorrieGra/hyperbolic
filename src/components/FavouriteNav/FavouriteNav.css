@@ -30,6 +30,17 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .favourite__nav {
+    width: 70vw;
+    right: -70vw;
+  }
+  .favourite__nav:hover {
+    animation: slideOutMobile .3s linear forwards;
+    -webkit-animation: slideOutMobile .3s linear forwards;
+  }
+}
+
 .favourite__item-list {
   list-style-type: none;
   overflow: hidden scroll;
@@ -69,6 +80,26 @@
     -moz-transform: translateX(-30vw);
     -ms-transform: translateX(-30vw);
     -o-transform: translateX(-30vw);
+  }
+}
+
+@-webkit-keyframes slideOutMobile {
+  100% {
+    transform: translateX(-70vw);
+    -webkit-transform: translateX(-70vw);
+    -moz-transform: translateX(-70vw);
+    -ms-transform: translateX(-70vw);
+    -o-transform: translateX(-70vw);
+  }
+}
+
+@keyframes slideOutMobile {
+  100% {
+    transform: translateX(-70vw);
+    -webkit-transform: translateX(-70vw);
+    -moz-transform: translateX(-70vw);
+    -ms-transform: translateX(-70vw);
+    -o-transform: translateX(-70vw);
   }
 }
 /*# sourceMappingURL=FavouriteNav.css.map */

@@ -28,6 +28,16 @@
         -o-border-radius: 2.5px;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1000px) {
+        width: 70vw;
+        right: -70vw;
+        
+        &:hover {
+            animation: slideOutMobile .3s linear forwards;
+            -webkit-animation: slideOutMobile .3s linear forwards;
+        }
+    }
 }
 
 .favourite__item-list {
@@ -53,6 +63,15 @@
         -moz-transform: translateX(-30vw);
         -ms-transform: translateX(-30vw);
         -o-transform: translateX(-30vw);
+    }
 }
-    
+
+@keyframes slideOutMobile {
+    100% {
+        transform: translateX(-70vw);
+        -webkit-transform: translateX(-70vw);
+        -moz-transform: translateX(-70vw);
+        -ms-transform: translateX(-70vw);
+        -o-transform: translateX(-70vw);
+    }
 }
